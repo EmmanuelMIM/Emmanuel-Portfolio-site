@@ -1,0 +1,178 @@
+/* Hero Section */
+.hero {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  color: #AAA;
+  font-family: 'Lora', serif;
+}
+
+/* Photo */
+.hero-photo-wrapper {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.hero-photo {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: #333;
+  border: 2px solid rgba(240, 217, 108, 0.3);
+  box-shadow: 0 0 30px rgba(153, 107, 199, 0.2),
+              0 0 60px rgba(240, 217, 108, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.hero-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%; /* makes it circular */
+}
+
+/* Level badge */
+.hero-level {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+  padding: 4px 8px;
+  border-radius: 20px;
+  border: 1px solid rgba(240, 217, 108, 0.2);
+  background-color: #1B1825;
+}
+
+.level-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #F0D96C;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.4); opacity: 0.6; }
+}
+
+/* Name & glow */
+.hero-name {
+  font-family: 'Cinzel', serif;
+  font-size: 40px;
+  color: #F0D96C;
+  text-shadow: 0 0 10px #F0D96C, 0 0 20px rgba(153, 107, 199, 0.5);
+  margin-bottom: 10px;
+}
+
+/* Divider */
+.hero-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+
+.hero-divider .line {
+  height: 1px;
+  width: 80px;
+  background: linear-gradient(to right, transparent, #F0D96C40);
+}
+
+.hero-divider .line.right {
+  background: linear-gradient(to left, transparent, #F0D96C40);
+}
+
+.hero-divider span {
+  color: #F0D96C40;
+  font-size: 12px;
+}
+
+/* Title */
+.hero-title {
+  font-style: italic;
+  font-size: 18px;
+  color: #AAA;
+  margin-bottom: 30px;
+}
+
+/* Stats */
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat-label {
+  font-size: 8px;
+  letter-spacing: 0.2em;
+  color: #666;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+
+.stat-bar {
+  width: 112px;
+  height: 6px;
+  border-radius: 4px;
+  background-color: #222;
+  border: 1px solid rgba(255,255,255,0.1);
+  overflow: hidden;
+}
+
+.stat-fill {
+  height: 100%;
+  border-radius: 4px;
+  background: linear-gradient(90deg, #F0D96C, #996BC7);
+}
+
+.stat-fill.creativity { width: 95%; }
+.stat-fill.design { width: 90%; }
+.stat-fill.code { width: 85%; }
+
+/* Education */
+.hero-education {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.1);
+  background-color: #16141F;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.edu-icon {
+  width: 36px;
+  height: 36px;
+  background-color: #2E203C;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.edu-text p:first-child {
+  font-weight: 500;
+  color: #EEE;
+  margin: 0;
+}
+
+.edu-text p:last-child {
+  font-style: italic;
+  font-size: 12px;
+  color: #888;
+  margin: 0;
+}

@@ -1,0 +1,40 @@
+/* hidden state */
+.reveal,
+.reveal-left,
+.reveal-right,
+.reveal-up,
+.reveal-bottom {
+  opacity: 0;
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* different starting positions */
+.reveal {
+  transform: translateY(20px);
+}
+
+.reveal-up {
+  transform: translateY(30px);
+}
+
+.reveal-left {
+  transform: translateX(-50px);
+}
+
+.reveal-right {
+  transform: translateX(50px);
+}
+
+.reveal-bottom {
+  transform: translateY(50px);
+}
+
+/* visible state */
+.reveal.show,
+.reveal-up.show,
+.reveal-left.show,
+.reveal-right.show,
+.reveal-bottom.show {
+  opacity: 1;
+  transform: translate(0, 0);
+}

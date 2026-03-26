@@ -1,0 +1,163 @@
+.featurework {
+	padding: 3rem 1.25rem;
+}
+
+.featurework-inner {
+	max-width: 1200px;
+	margin: 0 auto;
+    margin-top: 80px;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1.5rem;
+}
+
+.featurework-preview {
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	border-radius: 16px;
+	min-height: 350px;
+	background-color: rgba(15, 13, 23, 0.7);
+	overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/FantasyTravel.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.featurework-preview:hover{
+    background-color: rgba(15, 13, 23, 1);
+    box-shadow: 0px 0px 20px rgba(255, 255, 0, 0.23);
+    transform: scale(1.02);
+    transition: all 0.3s ease-in-out;
+}
+
+.preview-link {
+	width: 100%;
+	height: 100%;
+	min-height: 240px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	font-family: "Lora", serif;
+	font-style: italic;
+}
+
+.featurework-content {
+	color: #f2f2f2;
+}
+
+.featurework-label {
+	margin: 0;
+	text-transform: uppercase;
+	letter-spacing: 0.25em;
+	font-size: 0.7rem;
+	color: rgba(239, 219, 108, 0.8);
+}
+
+.featurework-content h3 {
+	margin: 0.5rem 0;
+	font-family: "Cinzel", serif;
+	font-size: 1.8rem;
+}
+
+.featurework-description {
+	margin: 0;
+	color: rgba(255, 255, 255, 0.8);
+	line-height: 1.6;
+}
+
+.featurework-tags {
+	margin-top: 1rem;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+}
+
+.featurework-tags span {
+	border: 1px solid rgba(239, 219, 108, 0.2);
+	border-radius: 999px;
+    background-color: rgb(26, 23, 38);
+	padding: 0.3rem 0.8rem;
+	font-size: 0.78rem;
+	color: rgba(239, 219, 108, 0.8);
+}
+
+.featurework-button {
+	display: inline-block;
+	margin-top: 1rem;
+	border: 1px solid rgba(239, 219, 108, 0.2);
+	border-radius: 10px;
+	padding: 0.6rem 1rem;
+	color: rgba(239, 219, 108, 0.8);
+	text-decoration: none;
+	transition: background-color 0.2s ease;
+}
+
+.featurework-button:hover {
+	background-color: rgba(239, 219, 108, 0.15);
+}
+
+@media (min-width: 768px) {
+	.featurework-inner {
+		grid-template-columns: 1fr 1fr;
+		align-items: start;
+		gap: 2rem;
+	}
+}
+
+/* Carousel styles */
+
+.simple-carousel {
+  position: relative;
+  width: 500px; /* fixed width of the carousel */
+  margin: 20px auto; /* centers carousel */
+}
+
+.slide{
+    background: #222;
+    border-radius: 8px;
+}
+
+.slide img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.caption {
+  color: rgba(239, 219, 108, 0.8);
+  text-align: left;
+  font-size: 12px; 
+  margin-top: 5px;
+  padding-left: 5px;
+}
+
+.captionMain {
+  color: #f2f2f2;
+  text-align: left;
+  font-size: 16px; 
+  margin-top: 2px;
+  padding-left: 5px;
+  padding-bottom: 20px;
+}
+
+/* arrows */
+.prev, .next {
+  position: absolute;
+  top: 50%; 
+  transform: translateY(-50%); 
+  background: #444;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.prev { left: -10px; }  
+.next { right: -10px; } 
+
+/*carousel end*/
